@@ -1,4 +1,4 @@
-import React from "react"
+
 const Header = () =>{
     return(
         <div className="ui fixed menu">
@@ -10,3 +10,4 @@ const Header = () =>{
         </div>
     )
 }
+export default Header;
