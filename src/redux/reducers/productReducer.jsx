@@ -4,6 +4,7 @@ import { ActionTypes } from "../contants/action-Types";
 const initialState= {
     products:[],
 }
+/*state:geçerli durum, action:Ç aksiyon nesnesi (action da olusturduk)*/
 export const productReducer = (state=initialState,{type,payload}) =>{
     switch (type) {
         case ActionTypes.SET_PRODUCTS:

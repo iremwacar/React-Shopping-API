@@ -19,3 +19,6 @@ export const removeSelectedProduct = () => {
         type: ActionTypes.REMOVE_SELECTED_PRODUCTS,
     }
 }
+/*
+type: aksiyon türü
+payload:aksiyonla gönderilecek veri*/

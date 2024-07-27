@@ -11,13 +11,14 @@ function ProductDetail() {
   const dispatch = useDispatch();
   console.log(product);
 
+  /*asyc: asenkron işlem, await: asenkron işlem bekleyebilir, kodun devam etmesini engeller*/
   const fetchProductDetail = async () => {
     const response = await axios
       .get(`https://fakestoreapi.com/products/${productId}`)
       .catch((err) => {
         console.log("err", err);
       });
-
+    /*dispatch: reduxa  aksiyon gönderir.*/
     dispatch(selectedProduct(response.data));
   };
 
